@@ -1,0 +1,6 @@
+@media (min-width: 1138px) {
+    .main-inner {
+        width: 80%;
+        min-width: 1138px;
+    }
+}
