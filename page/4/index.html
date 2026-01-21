@@ -1,0 +1,428 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.8.0" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.8.0" type="image/png" sizes="32x32"><meta name="description" content="一个JAVA开发者的个人博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HGL Blog">
+<meta property="og:url" content="https://haoguangliang.github.io/page/4/index.html">
+<meta property="og:site_name" content="HGL Blog">
+<meta property="og:description" content="一个JAVA开发者的个人博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="HGL">
+<meta name="twitter:card" content="summary"><title>HGL Blog</title><link ref="canonical" href="https://haoguangliang.github.io/page/4/index.html"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.8.0"><link rel="stylesheet" href="/css/custom.css"><script>var Stun = window.Stun || {};
+var CONFIG = {
+  root: '/',
+  algolia: undefined,
+  assistSearch: undefined,
+  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
+  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
+  header: {"enable":true,"showOnPost":true,"scrollDownIcon":false},
+  postWidget: {"endText":true},
+  nightMode: {"enable":true},
+  back2top: {"enable":true},
+  codeblock: {"style":"default","highlight":"light","wordWrap":false},
+  reward: false,
+  fancybox: false,
+  zoomImage: {"gapAside":"20px"},
+  galleryWaterfall: undefined,
+  lazyload: false,
+  pjax: undefined,
+  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
+  shortcuts: undefined,
+  prompt: {"copyButton":"复制","copySuccess":"复制成功","copyError":"复制失败"},
+  sourcePath: {"js":"js","css":"css","images":"images"},
+};
+
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 8.1.1"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">The web log of HGL</div><div class="header-banner-info__subtitle">Change is right now</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2025/12/13/%E4%BD%BF%E7%94%A8hexo%20+%20GitHub%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/%E4%BD%BF%E7%94%A8hexo%20+%20GitHub%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/">使用hexo + GitHub部署自己的博客</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2025-12-13</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2025-12-25</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>Hexo是一个博客框架，Hexo生成自己的博客项目，可以将的html、Markdown文件解析生成可部署的静态网页。</p>
+<p>Hexo有很多漂亮的主题供选择，配置后就可以生成对应主题的静态项目。</p>
+<p><strong>官方文档链接：</strong></p>
+<ul>
+<li><p><a href="%5BHexo%5D(https://hexo.io/zh-cn/)">Hexo中文官网</a></p>
+</li>
+<li><p><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://github.com/liuyib/hexo-theme-stun" >hexo主题stun</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+</li>
+</ul>
+
+        <h2 id="环境准备"   >
+          <a href="#环境准备" class="heading-link"><i class="fas fa-link"></i></a><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2>
+      <p>安装 Hexo 相当简单，只需要先安装下列应用程序即可：</p>
+<ul>
+<li><p><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="http://nodejs.org/" >Node.js</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)</p>
+</li>
+<li><p><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="http://git-scm.com/" >Git</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+</li>
+</ul>
+<p>如果你的电脑上恰好拥有这些必备程序，那么恭喜你，可以直接前往安装hexo了</p>
+
+        <h3 id="node版本限制"   >
+          <a href="#node版本限制" class="heading-link"><i class="fas fa-link"></i></a><a href="#node版本限制" class="headerlink" title="node版本限制"></a>node版本限制</h3>
+      <p>20.19.0及以上版本都可以使用最新的hexo，否则只能使用旧的hexo版本了</p>
+
+        <h2 id="安装Hexo"   >
+          <a href="#安装Hexo" class="heading-link"><i class="fas fa-link"></i></a><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2>
+      
+        <h3 id="全局安装Hexo"   >
+          <a href="#全局安装Hexo" class="heading-link"><i class="fas fa-link"></i></a><a href="#全局安装Hexo" class="headerlink" title="全局安装Hexo"></a>全局安装Hexo</h3>
+      <p>新手推荐，可以在任意位置直接使用hexo命令</p>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="局部安装Hexo"   >
+          <a href="#局部安装Hexo" class="heading-link"><i class="fas fa-link"></i></a><a href="#局部安装Hexo" class="headerlink" title="局部安装Hexo"></a>局部安装Hexo</h3>
+      <p>对于熟悉 npm 的进阶用户，可以仅局部安装 <code>hexo</code> 包。</p>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo</span><br></pre></td></tr></table></div></figure>
+
+<p>局部安装的方式使用时需要在hexo命令的前面加一个npx就可以使用hexo命令<code>npx hexo &lt;command&gt;</code></p>
+
+        <h2 id="使用Hexo创建博客项目，并启动项目"   >
+          <a href="#使用Hexo创建博客项目，并启动项目" class="heading-link"><i class="fas fa-link"></i></a><a href="#使用Hexo创建博客项目，并启动项目" class="headerlink" title="使用Hexo创建博客项目，并启动项目"></a>使用Hexo创建博客项目，并启动项目</h2>
+      <p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。</p>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建一个my-blog项目</span></span><br><span class="line">hexo init my-blog</span><br><span class="line"><span class="comment"># 进入my-blog项目文件夹</span></span><br><span class="line"><span class="built_in">cd</span> my-blog</span><br><span class="line"><span class="comment"># 安装项目的依赖文件</span></span><br><span class="line">npm install</span><br></pre></td></tr></table></div></figure>
+
+<p>此时我们的博客项目就初始化完成了，我们可运行博客项目查看效果</p>
+<p>如果想要了解项目的结构可以都这里查看<a href="#Hexo%E5%88%9D%E5%A7%8B%E5%8C%96%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84">Hexo初始化的项目结构</a></p>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 进入博客项目根目录，然后执行下面启动服务的命令运行博客项目</span></span><br><span class="line">hexo server</span><br></pre></td></tr></table></div></figure>
+
+<p>启动成功后会输出项目访问地址：<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="http://localhost:4000/" >http://localhost:4000/</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>，我们直接在浏览器打开就能看到博客主页了</p>
+<p><img src="/2025/12/13/%E4%BD%BF%E7%94%A8hexo%20+%20GitHub%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/%E4%BD%BF%E7%94%A8hexo%20+%20GitHub%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/4679e905-1696-438f-92ce-4e72292e5bc7.png" alt="4679e905-1696-438f-92ce-4e72292e5bc7"></p>
+<p>这里我们在访问时发现页面加载很慢，其实是一些css、js使用的cdn链接，这些文件会出现加载慢或加载失败。解决方式见这里<a href="#%E5%8D%9A%E5%AE%A2%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%90%AF%E5%8A%A8%E5%90%8E%E5%8F%91%E7%8E%B0%E9%A1%B5%E9%9D%A2%E5%8A%A0%E8%BD%BD%E5%BE%88%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98">博客第一次启动后发现页面加载很慢的问题</a>。</p>
+<p>目前博客的样式是默认样式，下面内容会演示通过使用主题的方式美化我们的博客。</p>
+<p>下面内容还会将博客推送到GitHub，推送后我们可以使用GitHub提供的链接在公网访问到我们的博客了。</p>
+
+        <h2 id="Hexo的项目结构"   >
+          <a href="#Hexo的项目结构" class="heading-link"><i class="fas fa-link"></i></a><a href="#Hexo的项目结构" class="headerlink" title="Hexo的项目结构"></a>Hexo的项目结构</h2>
+      <figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml  </span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── <span class="built_in">source</span></span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="config-yml"   >
+          <a href="#config-yml" class="heading-link"><i class="fas fa-link"></i></a><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h3>
+      <p>网站的 <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/configuration" >配置</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 文件。 您可以在此配置大部分的参数。</p>
+
+        <h3 id="package-json"   >
+          <a href="#package-json" class="heading-link"><i class="fas fa-link"></i></a><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h3>
+      <p>项目的包管理文件，项目中用到的依赖都在这里配置</p>
+<p>应用程序的信息。 <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://ejs.co/" >EJS</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>, <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="http://learnboost.github.io/stylus/" >Stylus</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 和 <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="http://daringfireball.net/projects/markdown/" >Markdown</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 渲染引擎 已默认安装，您可以自由移除。 如果您想，可以稍后卸载它们。</p>
+<figure class="highlight json"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">package.json</span><br><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;hexo-site&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;version&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.0.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;private&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;hexo&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;version&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;dependencies&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;hexo&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^7.0.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;hexo-generator-archive&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^2.0.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;hexo-generator-category&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^2.0.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;hexo-generator-index&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^3.0.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;hexo-generator-tag&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^2.0.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;hexo-renderer-ejs&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^2.0.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;hexo-renderer-stylus&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^3.0.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;hexo-renderer-marked&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^6.0.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;hexo-server&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^3.0.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;hexo-theme-landscape&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^1.0.0&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="scaffolds"   >
+          <a href="#scaffolds" class="heading-link"><i class="fas fa-link"></i></a><a href="#scaffolds" class="headerlink" title="scaffolds"></a>scaffolds</h3>
+      <p><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/writing#%E6%A8%A1%E7%89%88%EF%BC%88Scaffold%EF%BC%89" >模版</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 文件夹。 当您新建文章（markdown）时，Hexo 会根据 scaffold 来创建文件。</p>
+
+        <h3 id="source"   >
+          <a href="#source" class="heading-link"><i class="fas fa-link"></i></a><a href="#source" class="headerlink" title="source"></a>source</h3>
+      <p>资源文件夹。 是存放用户资源的地方。 除 <code>_posts</code> 文件夹之外，开头命名为 <code>_</code> (下划线)的文件 &#x2F; 文件夹和隐藏的文件将会被忽略。 Markdown 和 HTML 文件会被解析并放到 <code>public</code> 文件夹，而其他文件会被拷贝过去。</p>
+
+        <h3 id="themes"   >
+          <a href="#themes" class="heading-link"><i class="fas fa-link"></i></a><a href="#themes" class="headerlink" title="themes"></a>themes</h3>
+      <p><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/themes" >主题</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 文件夹。 Hexo 会根据主题来生成静态页面</p>
+
+        <h2 id="博客的国际化"   >
+          <a href="#博客的国际化" class="heading-link"><i class="fas fa-link"></i></a><a href="#博客的国际化" class="headerlink" title="博客的国际化"></a>博客的国际化</h2>
+      <p>修改Hexo根目录下_config.yml，把博客修改为中文</p>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">language: zh-CN</span><br></pre></td></tr></table></div></figure>
+
+
+        <h2 id="创建文章"   >
+          <a href="#创建文章" class="heading-link"><i class="fas fa-link"></i></a><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h2>
+      <p>新创建的文章会被存储在Hexo项目根目录的\source_posts下</p>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new 文章标题</span><br></pre></td></tr></table></div></figure>
+
+
+        <h2 id="博客的美化"   >
+          <a href="#博客的美化" class="heading-link"><i class="fas fa-link"></i></a><a href="#博客的美化" class="headerlink" title="博客的美化"></a>博客的美化</h2>
+      <p>我这边使用的是<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://github.com/liuyib/hexo-theme-stun" >stun</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>这个主题，如果你想使用其他主题的话也可以去[Hexo主题官网](<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/themes/" >Themes | Hexo</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>)找自己喜欢的主题</p>
+
+        <h3 id="stun主题的安装与使用"   >
+          <a href="#stun主题的安装与使用" class="heading-link"><i class="fas fa-link"></i></a><a href="#stun主题的安装与使用" class="headerlink" title="stun主题的安装与使用"></a>stun主题的安装与使用</h3>
+      <p>安装主题，在 Hexo 根目录下，执行指令：</p>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 从github克隆项目到themes/stun文件夹</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/liuyib/hexo-theme-stun.git themes/stun</span><br></pre></td></tr></table></div></figure>
+
+<p>安装主题所需的依赖hexo-renderer-pug，在 Hexo 根目录下，执行指令</p>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-renderer-pug</span><br></pre></td></tr></table></div></figure>
+
+<p>使用主题stun，修改 Hexo 根目录下的 <code>_config.yml</code> 文件：</p>
+<figure class="highlight json"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme<span class="punctuation">:</span> stun</span><br></pre></td></tr></table></div></figure>
+
+<p>启动Hexo项目</p>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 清理项目并启动服务</span></span><br><span class="line">hexo clean &amp;&amp; hexo s</span><br></pre></td></tr></table></div></figure>
+
+<p>此时博客主题的初步使用已经完成了，访问链接查看效果</p>
+<p><img src="/2025/12/13/%E4%BD%BF%E7%94%A8hexo%20+%20GitHub%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/%E4%BD%BF%E7%94%A8hexo%20+%20GitHub%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/e51dd8d2-6c2f-4fa4-b28f-781f7bdacd10.png" alt="e51dd8d2-6c2f-4fa4-b28f-781f7bdacd10"></p>
+
+        <h3 id="配置博客主题"   >
+          <a href="#配置博客主题" class="heading-link"><i class="fas fa-link"></i></a><a href="#配置博客主题" class="headerlink" title="配置博客主题"></a>配置博客主题</h3>
+      <p>[<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://theme-stun.github.io/docs/zh-CN/guide/primary.html#favicon" >stun主题配置文档</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>]</p>
+
+        <h4 id="网站主体设置"   >
+          <a href="#网站主体设置" class="heading-link"><i class="fas fa-link"></i></a><a href="#网站主体设置" class="headerlink" title="网站主体设置"></a>网站主体设置</h4>
+      <figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">body</span>:</span><br><span class="line">  # 网站主体背景图片</span><br><span class="line">  <span class="attr">bg_image</span>:</span><br><span class="line">    <span class="attr">enable</span>: <span class="literal">false</span></span><br><span class="line">    # 填写图片路径或链接</span><br><span class="line">    <span class="attr">url</span>: <span class="attr">https</span>:<span class="comment">//xxxxx.png</span></span><br><span class="line">    # 是否固定背景图片（相当于设置 <span class="variable constant_">CSS</span> 属性 <span class="attr">position</span>: fixed）</span><br><span class="line">    <span class="attr">fixed</span>: <span class="literal">true</span></span><br><span class="line">    # 是否重复显示背景图片（相当于设置 <span class="variable constant_">CSS</span> 属性 background-<span class="attr">repeat</span>: repeat/no-repeat）</span><br><span class="line">    <span class="attr">repeat</span>: <span class="literal">false</span></span><br><span class="line">  # 网站主体背景图片的遮罩效果</span><br><span class="line">  <span class="attr">mask</span>:</span><br><span class="line">    <span class="attr">enable</span>: <span class="literal">false</span></span><br><span class="line">    # 透明度（取值：<span class="number">0</span> ~ <span class="number">1</span>）</span><br><span class="line">    <span class="attr">opacity</span>:</span><br><span class="line">      # 默认情况下，网站主体背景图片的透明度</span><br><span class="line">      <span class="attr">default</span>: <span class="number">0.1</span></span><br><span class="line">      # 夜晚模式下，网站主体背景图片的透明度</span><br><span class="line">      <span class="attr">night_mode</span>: <span class="number">0.6</span></span><br></pre></td></tr></table></div></figure>
+
+
+        <h4 id="作者信息"   >
+          <a href="#作者信息" class="heading-link"><i class="fas fa-link"></i></a><a href="#作者信息" class="headerlink" title="作者信息"></a>作者信息</h4>
+      <figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">author</span>:</span><br><span class="line">  <span class="attr">enable</span>: <span class="literal">true</span></span><br><span class="line">  # 侧边栏头像</span><br><span class="line">  <span class="attr">avatar</span>:</span><br><span class="line">    # 填写图片路径或链接</span><br><span class="line">    <span class="attr">url</span>: <span class="attr">https</span>:<span class="comment">//xxxxx.png</span></span><br><span class="line">    # 是否显示为圆形</span><br><span class="line">    <span class="attr">rounded</span>: <span class="literal">true</span></span><br><span class="line">    # 头像透明度（取值：<span class="number">0</span> ~ <span class="number">1</span>）</span><br><span class="line">    <span class="attr">opacity</span>: <span class="number">1</span></span><br><span class="line">    # 鼠标经过时的动画，可选值：turn 或 shake</span><br><span class="line">    <span class="attr">animation</span>: turn</span><br><span class="line">  # 格言（可以是任意一句想写的话）</span><br><span class="line">  <span class="attr">motto</span>: hello world</span><br></pre></td></tr></table></div></figure>
+
+<p>我这里修改了网站嘴上面的背景图片和头像就有了这样的效果</p>
+<p><img src="/2025/12/13/%E4%BD%BF%E7%94%A8hexo%20+%20GitHub%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/%E4%BD%BF%E7%94%A8hexo%20+%20GitHub%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/21b45d94-77fc-4b4a-aca7-9b5e20df1542.png" alt="21b45d94-77fc-4b4a-aca7-9b5e20df1542"></p>
+<p>这个主题的把部分都是可以配置的，其他的一些配置可以到官网去看看[<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://theme-stun.github.io/docs/zh-CN/guide/primary.html#favicon" >stun主题配置文档</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>]</p>
+
+        <h3 id="顶部导航栏增加新页面"   >
+          <a href="#顶部导航栏增加新页面" class="heading-link"><i class="fas fa-link"></i></a><a href="#顶部导航栏增加新页面" class="headerlink" title="顶部导航栏增加新页面"></a>顶部导航栏增加新页面</h3>
+      
+        <h4 id="启用分类页、标签页"   >
+          <a href="#启用分类页、标签页" class="heading-link"><i class="fas fa-link"></i></a><a href="#启用分类页、标签页" class="headerlink" title="启用分类页、标签页"></a>启用分类页、标签页</h4>
+      <p>Stun 主题内置有：分类页、标签页。默认没有启用。如果想启用它们，你需要执行以下步骤：</p>
+<ol>
+<li><p>创建页面，在Hexo项目根目录执行</p>
+<pre><code># 启用分类页，执行这条指令
+hexo new page categories
+
+# 启用标签页，执行这条指令
+hexo new page tags
+</code></pre>
+</li>
+<li><p>修改 Front-Matter<br>在 Hexo 根目录下，找到 <code>source/categories</code> 或 <code>source/tags</code> 文件夹中的 Markdown 文件，设置 Front-Matter：</p>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line"><span class="comment"># 如果是分类页，设置这个</span></span><br><span class="line"><span class="built_in">type</span>: <span class="string">&quot;categories&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 如果是标签页，设置这个</span></span><br><span class="line"><span class="built_in">type</span>: <span class="string">&quot;tags&quot;</span></span><br><span class="line">---</span><br></pre></td></tr></table></div></figure>
+</li>
+<li><p>修改主题配置文件<br>将 <code>categories</code> 或 <code>tags</code> 对应项取消注释：</p>
+<figure class="highlight json"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># `||` 分隔符之前是页面路径，`||` 分隔符之后是图标</span><br><span class="line"># 用法（有图标）<span class="punctuation">:</span> `Key<span class="punctuation">:</span> /路径/ || fa(s|r|l|d|b) fa-图标名称`</span><br><span class="line"># 用法（无图标）<span class="punctuation">:</span> `Key<span class="punctuation">:</span> /路径/`</span><br><span class="line"># fas far fal fad fab 是 FontAwesome <span class="number">5.</span>x 中图标的前缀，你需要根据具体图标自行设置</span><br><span class="line"># 查找图标名称，请访问：https<span class="punctuation">:</span><span class="comment">//fontawesome.com/icons</span></span><br><span class="line">menu<span class="punctuation">:</span></span><br><span class="line">  home<span class="punctuation">:</span> / || fas fa-home</span><br><span class="line">  archives<span class="punctuation">:</span> /archives/ || fas fa-folder-open</span><br><span class="line">  # categories<span class="punctuation">:</span> /categories/ || fas fa-layer-group</span><br><span class="line">  # tags<span class="punctuation">:</span> /tags/ || fas fa-tags</span><br></pre></td></tr></table></div></figure>
+
+<p>我们新增的分类页、标签页在打开时我们会发现里面是没有任何分类和标签的，我们只需要在编写markdown时在头部加入一些标签和分类信息，我们的分类和标签页就可以显示出已经使用的标签和分类了<br>给文章添加分了和标签</p>
+<figure class="highlight markdown"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: ./</span><br><span class="line">// 添加分类 前端技术和后端技术是同级，前端技术和hexo上下级关系</span><br><span class="line">categories:</span><br><span class="line"><span class="bullet">    -</span> [前端技术,   hexo]</span><br><span class="line"><span class="bullet">    -</span> 后端技术</span><br><span class="line">// 添加标签，标签部分层级</span><br><span class="line">tags:</span><br><span class="line"><span class="bullet">    -</span> 前端技术</span><br><span class="line"><span class="bullet">    -</span> hexo</span><br><span class="line"><span class="bullet">    -</span> GitHub</span><br><span class="line"><span class="section">    - 个人博客</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></div></figure></li>
+</ol>
+
+        <h4 id="新增自定义页面"   >
+          <a href="#新增自定义页面" class="heading-link"><i class="fas fa-link"></i></a><a href="#新增自定义页面" class="headerlink" title="新增自定义页面"></a>新增自定义页面</h4>
+      <p>   以添加一个阅读页面为例</p>
+<ol>
+<li><p>修改主题配置文件</p>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu</span>:</span><br><span class="line">  <span class="attr">reading</span>: <span class="regexp">/reading/</span> || fas fa-book</span><br></pre></td></tr></table></div></figure>
+</li>
+<li><p>生成页面文件</p>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这里的 reading 对应上一步你设置的路径名称</span></span><br><span class="line">hexo new page reading</span><br></pre></td></tr></table></div></figure>
+</li>
+<li><p>国际化设置<br>找到 <code>languages</code> 目录下的语言文件，根据你网站使用的语言选择对应的语言文件，例如：<br><code>zh-CN.yml</code>：</p>
+<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu</span>:</span><br><span class="line">  <span class="attr">reading</span>: 阅读</span><br></pre></td></tr></table></div></figure>
+
+<p>这样就添加好了自定义页面。<br>另外，你可以通过修改主题配置文件里的 <code>menu_settings</code> 选项，来设置图标和文字是否显示：</p>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">menu_settings:</span><br><span class="line">  <span class="comment"># 是否只显示图标</span></span><br><span class="line">  icon_only: <span class="literal">false</span></span><br><span class="line">  <span class="comment"># 是否只显示文字</span></span><br><span class="line">  text_only: <span class="literal">false</span></span><br></pre></td></tr></table></div></figure></li>
+</ol>
+
+        <h4 id="新增完页面后的效果"   >
+          <a href="#新增完页面后的效果" class="heading-link"><i class="fas fa-link"></i></a><a href="#新增完页面后的效果" class="headerlink" title="新增完页面后的效果"></a>新增完页面后的效果</h4>
+      <p><img src="/2025/12/13/%E4%BD%BF%E7%94%A8hexo%20+%20GitHub%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/%E4%BD%BF%E7%94%A8hexo%20+%20GitHub%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/180a09c3-5318-47eb-9d85-fc68bddfb573.png" alt="180a09c3-5318-47eb-9d85-fc68bddfb573"></p>
+
+        <h3 id="通过custom-css调整主题样式"   >
+          <a href="#通过custom-css调整主题样式" class="heading-link"><i class="fas fa-link"></i></a><a href="#通过custom-css调整主题样式" class="headerlink" title="通过custom.css调整主题样式"></a>通过custom.css调整主题样式</h3>
+      <p>在Hexo项目根目录下的themes\stun\source\css文件夹custom.css文件，直接在这个文件内编写css，也可以对主题的页面样式进行调整<br>然后修改主题的配置文件_config.yml</p>
+<figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">css_custom: /css/custom.css</span><br></pre></td></tr></table></div></figure>
+
+
+        <h2 id="将博客发布到GitHub"   >
+          <a href="#将博客发布到GitHub" class="heading-link"><i class="fas fa-link"></i></a><a href="#将博客发布到GitHub" class="headerlink" title="将博客发布到GitHub"></a>将博客发布到GitHub</h2>
+      <ol>
+<li><p>安装 <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-deployer-git" >hexo-deployer-git</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>。</p>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># hexo根目录执行，安装插件并加入package.json中</span></span><br><span class="line">npm install hexo-deployer-git install --save</span><br></pre></td></tr></table></div></figure>
+</li>
+<li><p>在 <code>_config.yml</code> 中添加以下配置（如果配置已经存在，请将其替换为如下）bash</p>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/&lt;username&gt;/&lt;project&gt;</span><br><span class="line">  branch: gh-pages</span><br></pre></td></tr></table></div></figure>
+
+<p>并在自己的github中创建一个<project>的仓库</p>
+</li>
+<li><p>执行 <code>hexo clean &amp;&amp; hexo deploy</code> 。</p>
+</li>
+<li><p>浏览 <em>username</em>.github.io&#x2F;<project>，检查你的网站能否运作。</p>
+</li>
+</ol>
+
+        <h3 id="遇到的一些问题"   >
+          <a href="#遇到的一些问题" class="heading-link"><i class="fas fa-link"></i></a><a href="#遇到的一些问题" class="headerlink" title="遇到的一些问题"></a>遇到的一些问题</h3>
+      
+        <h3 id="博客第一次启动后发现页面加载很慢的问题"   >
+          <a href="#博客第一次启动后发现页面加载很慢的问题" class="heading-link"><i class="fas fa-link"></i></a><a href="#博客第一次启动后发现页面加载很慢的问题" class="headerlink" title="博客第一次启动后发现页面加载很慢的问题"></a>博客第一次启动后发现页面加载很慢的问题</h3>
+      <p>解决方案就是，把加载慢的js下载到本地，放到项目中，然后我们会发现项目加载飞快</p>
+<p>在浏览器中打开博客页面，然后浏览器中按F12打开控制台，我们看那些文件加载的很慢，这些文件大概率都是使用的cdn，这些就是我们要处理的问题</p>
+<p><img src="/2025/12/13/%E4%BD%BF%E7%94%A8hexo%20+%20GitHub%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/%E4%BD%BF%E7%94%A8hexo%20+%20GitHub%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/36ac57f8-e9e6-4bba-9dc6-f92ec80fe9db.png" alt="36ac57f8-e9e6-4bba-9dc6-f92ec80fe9db"></p>
+<p><strong>以jquery.min.js为例</strong>：</p>
+<p>打开Hexo项目根目录下面的themes\stun\_config.yml主题的配置文件，搜索jquery.min.js</p>
+<p><img src="/2025/12/13/%E4%BD%BF%E7%94%A8hexo%20+%20GitHub%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/%E4%BD%BF%E7%94%A8hexo%20+%20GitHub%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/dabf3918-5888-4d6e-96f5-99a0b4040c12.png" alt="dabf3918-5888-4d6e-96f5-99a0b4040c12"></p>
+<p>然后修改为</p>
+<figure class="highlight json"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jquery<span class="punctuation">:</span> /js/jquery.min.js</span><br></pre></td></tr></table></div></figure>
+
+<p>将jquery下载下来下来，放在themes\stun\source\js目录下，直接访问注释中提供的cnd或者自己去网上找对应版本的js</p>
+<p>根据此步骤吧其他几个加载慢的也这样处理一下，我们发现博客页面就可以秒开了，custom.css不用管，如果想要了解可以到<a href="#%E9%80%9A%E8%BF%87custom.css%E8%B0%83%E6%95%B4%E4%B8%BB%E9%A2%98%E6%A0%B7%E5%BC%8F">通过custom.css调整主题样式</a>去查看</p>
+
+        <h3 id="图片问题"   >
+          <a href="#图片问题" class="heading-link"><i class="fas fa-link"></i></a><a href="#图片问题" class="headerlink" title="图片问题"></a>图片问题</h3>
+      <p>在使用过程中，本地图片在Hexo项目中显示是有问题的，文章中使用相对路径显示的图片都没有办法显示</p>
+<p>解决方法：</p>
+<p>修改Hexo的配置文件config.yml</p>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: <span class="literal">true</span></span><br></pre></td></tr></table></div></figure>
+
+<p>修改之后，我们在使用hexo new命令创建文章时，会自动在同级目录创建一个与文章名相同的文件夹，将图片放入文件夹，然后文章中使用相对路径来访问图片，hexo就可以正确的处理图片的显示问题</p>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2025/12/10/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E6%B3%95/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E6%B3%95/">正则表达式常用语法</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2025-12-10</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2025-12-11</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h2 id="正则表达式修饰符"   >
+          <a href="#正则表达式修饰符" class="heading-link"><i class="fas fa-link"></i></a><a href="#正则表达式修饰符" class="headerlink" title="正则表达式修饰符"></a>正则表达式修饰符</h2>
+      <div class="table-container"><table>
+<thead>
+<tr>
+<th align="left">修饰符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">i</td>
+<td>不区分大小写</td>
+</tr>
+<tr>
+<td align="left">g</td>
+<td>执行全局匹配（查找所有匹配而非在找到第一个匹配后停止）。</td>
+</tr>
+<tr>
+<td align="left">m</td>
+<td>执行多行匹配</td>
+</tr>
+</tbody></table></div>
+
+        <h2 id="特殊字符"   >
+          <a href="#特殊字符" class="heading-link"><i class="fas fa-link"></i></a><a href="#特殊字符" class="headerlink" title="特殊字符"></a>特殊字符</h2>
+      <div class="table-container"><table>
+<thead>
+<tr>
+<th>特别字符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$</td>
+<td>匹配输入字符串的结尾位置。<span style='color: red'>如果设置了 RegExp 对象的 Multiline 属性，则 $ 也匹配 ‘\n’ 或 ‘\r’。</span>要匹配 $ 字符本身，请使用\$。</td>
+</tr>
+<tr>
+<td>^</td>
+<td>匹配输入字符串的开始位置，<span style='color: red'>如果设置了 RegExp 对象的 Multiline 属性，^ 还会与 \n 或 \r 之后的位置匹配。若果在方括号表达式中使用，当该符号在方括号表达式中使用时，表示不接受该方括号表达式中的字符集合。</span>要匹配 ^ 字符本身，请使用 ^。</td>
+</tr>
+<tr>
+<td>( )</td>
+<td>标记一个子表达式的开始和结束位置。子表达式可以获取供以后使用。要匹配这些字符，请使用 ( 和 )。</td>
+</tr>
+<tr>
+<td>*</td>
+<td>匹配前面的子表达式零次或多次。要匹配 * 字符，请使用 *。</td>
+</tr>
+<tr>
+<td>+</td>
+<td>匹配前面的子表达式一次或多次。要匹配 + 字符，请使用 +。</td>
+</tr>
+<tr>
+<td>.</td>
+<td>匹配除换行符 \n 之外的任何单字符。要匹配 . ，请使用 . 。</td>
+</tr>
+<tr>
+<td>[</td>
+<td>标记一个中括号表达式的开始。要匹配 [，请使用 [。</td>
+</tr>
+<tr>
+<td>?</td>
+<td>匹配前面的子表达式零次或一次，<span style='color: red'>或指明一个非贪婪限定符。</span>要匹配 ? 字符，请使用 ?。</td>
+</tr>
+<tr>
+<td>\</td>
+<td>将下一个字符标记为或特殊字符、或原义字符、或向后引用、或八进制转义符。例如， ‘n’ 匹配字符 ‘n’。’\n’ 匹配换行符。序列 ‘\‘ 匹配 “&quot;，而 ‘(‘ 则匹配 “(“。</td>
+</tr>
+<tr>
+<td>{</td>
+<td>标记限定符表达式的开始。要匹配 {，请使用 {。</td>
+</tr>
+<tr>
+<td>|</td>
+<td>指明两项之间的一个选择。要匹配 |，请使用 \</td>
+</tr>
+</tbody></table></div>
+<p>*** 和 + 限定符都是贪婪的，因为它们会尽可能多的匹配文字，只有在它们的后面加上一个 ? 就可以实现非贪婪或最小匹配。**<br>限定符</p>
+
+        <h4 id="圆括号使用说明："   >
+          <a href="#圆括号使用说明：" class="heading-link"><i class="fas fa-link"></i></a><a href="#圆括号使用说明：" class="headerlink" title="() 圆括号使用说明："></a>() 圆括号使用说明：</h4>
+      <p>() 表示捕获分组，() 会把每个分组里的匹配的值保存为一个数据，下标0是整个正则匹配到的内容，下标大于0对应第几个括号内正则捕获到的内容</p>
+<p><img src="/2025/12/10/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E6%B3%95/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E6%B3%95/c0222988-c96c-43e9-aa07-bf0fcd4c8293.png" alt="c0222988-c96c-43e9-aa07-bf0fcd4c8293"></p>
+<p>()中使用了限定符&#x2F;g，会导致正则中的括号不储存捕获到的内容</p>
+<p><img src="/2025/12/10/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E6%B3%95/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E6%B3%95/51f13458-a1de-4c51-818c-bcc784cf0e9a.png" alt="51f13458-a1de-4c51-818c-bcc784cf0e9a"></p>
+<p>但用圆括号会有一个副作用，使相关的匹配会被缓存，此时可用 ?: 放在第一个选项前来消除这种副作用。</p>
+<p>其中 ?: 是非捕获元之一，还有两个非捕获元是 ?&#x3D; 和 ?!，这两个还有更多的含义，前者为正向预查，在任何开始匹配圆括号内的正则表达式模式的位置来匹配搜索字符串，后者为负向预查，在任何开始不匹配该正则表达式模式的位置来匹配搜索字符串。</p>
+<p>从图中可见第一个括号没有捕获内容，只有第二个括号捕获的内容</p>
+<p><img src="/D:%5C%E5%AD%A6%E4%B9%A0%5C%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%5C%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E6%B3%95/0202734c-b473-4330-a80b-d2f0b90510d5.png" alt="0202734cb4734330a80bd2f0b90510d5"></p>
+
+        <h5 id="以下列出圆括号中-、"   >
+          <a href="#以下列出圆括号中-、" class="heading-link"><i class="fas fa-link"></i></a><a href="#以下列出圆括号中-、" class="headerlink" title="以下列出圆括号中 ?&#x3D;、?&lt;&#x3D;、?!、?&lt;! 的使用区别"></a><strong>以下列出圆括号中 ?&#x3D;、?&lt;&#x3D;、?!、?&lt;! 的使用区别</strong></h5>
+      <p>这几种正则表达式，捕获时都不会存储括号中的值</p>
+<ol>
+<li>
+        <h6 id="，exp1-exp2-：查找-exp2-前面的-exp1。"   >
+          <a href="#，exp1-exp2-：查找-exp2-前面的-exp1。" class="heading-link"><i class="fas fa-link"></i></a><a href="#，exp1-exp2-：查找-exp2-前面的-exp1。" class="headerlink" title="?&#x3D;，exp1(?&#x3D;exp2)：查找 exp2 前面的 exp1。"></a>?&#x3D;，exp1(?&#x3D;exp2)：查找 exp2 前面的 exp1。</h6>
+      <img src="/2025/12/10/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E6%B3%95/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E6%B3%95/d8566d00-a2a5-4b80-9d97-58e2931fafd6.png" alt="d8566d00-a2a5-4b80-9d97-58e2931fafd6"></li>
+<li><h6 id=""><a href="#" class="headerlink" title="?&lt;&#x3D;，(?&lt;&#x3D;exp2)exp1：查找 exp2 后面的 exp1。"></a>?&lt;&#x3D;，(?&lt;&#x3D;exp2)exp1：查找 exp2 后面的 exp1。</h6><img src="/2025/12/10/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E6%B3%95/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E6%B3%95/d5d893d0-9059-451f-a251-bf4682d71f7f.png" alt="d5d893d0-9059-451f-a251-bf4682d71f7f"></li>
+<li>
+        <h6 id="，exp1-exp2-：查找后面不是-exp2-的-exp1。"   >
+          <a href="#，exp1-exp2-：查找后面不是-exp2-的-exp1。" class="heading-link"><i class="fas fa-link"></i></a><a href="#，exp1-exp2-：查找后面不是-exp2-的-exp1。" class="headerlink" title="?!，exp1(?!exp2)：查找后面不是 exp2 的 exp1。"></a>?!，exp1(?!exp2)：查找后面不是 exp2 的 exp1。</h6>
+      <img src="/2025/12/10/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E6%B3%95/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E6%B3%95/c89f2159-a41b-4888-9d52-2aa02429dd4c.png" alt="c89f2159-a41b-4888-9d52-2aa02429dd4c"></li>
+<li>
+        <h6 id="-1"   >
+          <a href="#-1" class="heading-link"><i class="fas fa-link"></i></a><a href="#-1" class="headerlink" title="?&lt;!，(?&lt;!exp2)exp1：查找前面不是 exp2 的 exp1。"></a>?&lt;!，(?&lt;!exp2)exp1：查找前面不是 exp2 的 exp1。</h6>
+      <img src="/2025/12/10/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E6%B3%95/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AF%AD%E6%B3%95/a97d4342-2acf-4c3d-8282-e9df90371e7b.png" alt="a97d4342-2acf-4c3d-8282-e9df90371e7b"></li>
+</ol>
+
+        <h2 id="限定符"   >
+          <a href="#限定符" class="heading-link"><i class="fas fa-link"></i></a><a href="#限定符" class="headerlink" title="限定符"></a>限定符</h2>
+      <div class="table-container"><table>
+<thead>
+<tr>
+<th>*</th>
+<th>匹配前面的子表达式零次或多次。例如，zo* 能匹配 <strong>“z”</strong> 以及 <strong>“zoo”</strong>。* 等价于 {0,}。</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>+</td>
+<td>匹配前面的子表达式一次或多次。例如，zo+ 能匹配 <strong>“zo”</strong> 以及 “<strong>zoo”</strong>，但不能匹配 <strong>“z”</strong>。+ 等价于 {1,}。</td>
+</tr>
+<tr>
+<td>?</td>
+<td>匹配前面的子表达式零次或一次。例如，do(es)? 可以匹配 <strong>“do”</strong> 、 <strong>“does”</strong>、 <strong>“doxy”</strong> 中的 <strong>“do”</strong> 和 <strong>“does”</strong>。? 等价于 {0,1}。</td>
+</tr>
+<tr>
+<td>{n}</td>
+<td>n 是一个非负整数。匹配确定的 <strong>n</strong> 次。例如，o{2} 不能匹配 <strong>“Bob”</strong> 中的 <strong>o</strong>，但是能匹配 <strong>“food”</strong> 中的两个 <strong>o</strong>。</td>
+</tr>
+<tr>
+<td>{n,}</td>
+<td>n 是一个非负整数。至少匹配n 次。例如，o{2,} 不能匹配 <strong>“Bob”</strong> 中的 <strong>o</strong>，但能匹配 <strong>“foooood”</strong> 中的所有 <strong>o</strong>。o{1,} 等价于 o+。o{0,} 则等价于 o*。</td>
+</tr>
+<tr>
+<td>{n,m}</td>
+<td>m 和 n 均为非负整数，其中 n &lt;&#x3D; m。最少匹配 n 次且最多匹配 m 次。例如，o{1,3} 将匹配 <strong>“fooooood”</strong> 中的前三个 <strong>o</strong>。o{0,1} 等价于 o?。请注意在逗号和两个数之间不能有空格。</td>
+</tr>
+</tbody></table></div>
+
+        <h2 id="定位符"   >
+          <a href="#定位符" class="heading-link"><i class="fas fa-link"></i></a><a href="#定位符" class="headerlink" title="定位符"></a>定位符</h2>
+      <div class="table-container"><table>
+<thead>
+<tr>
+<th>字符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>^</td>
+<td>匹配输入字符串开始的位置。如果设置了 RegExp 对象的 Multiline 属性，^ 还会与 \n 或 \r 之后的位置匹配。</td>
+</tr>
+<tr>
+<td>$</td>
+<td>匹配输入字符串结尾的位置。如果设置了 RegExp 对象的 Multiline 属性，$ 还会与 \n 或 \r 之前的位置匹配。</td>
+</tr>
+<tr>
+<td>\b</td>
+<td>匹配一个单词边界，即字与空格间的位置。</td>
+</tr>
+<tr>
+<td>\B</td>
+<td>非单词边界匹配。</td>
+</tr>
+</tbody></table></div>
+</div></div></article></section><nav class="paginator"><div class="paginator-inner"><a class="extend prev" rel="prev" href="/page/3/"><i class="fas fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/5/"><i class="fas fa-angle-right"></i></a></div></nav></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/avatar.webp" alt="avatar"></div><p class="sidebar-ov-author__text">Love technology</p></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">9</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">11</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">11</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2026</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>HGL</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v8.1.1</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.8.0</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="/js/jquery.min.js"></script><script src="/js/velocity.min.js"></script><script src="/js/velocity.ui.min.js"></script><script src="/js/utils.js?v=2.8.0"></script><script src="/js/stun-boot.js?v=2.8.0"></script><script src="/js/scroll.js?v=2.8.0"></script><script src="/js/header.js?v=2.8.0"></script><script src="/js/sidebar.js?v=2.8.0"></script></body></html>
